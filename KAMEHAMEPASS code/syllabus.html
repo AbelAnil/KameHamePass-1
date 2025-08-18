@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syllabus - KAMEHAMEPASS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: sans-serif;
+            color: white;
+            background: linear-gradient(to bottom, #0a0f2d, #1a3a4a, #2a5a6a, #3a7a8a);
+            line-height: 1.5;
+        }
+
+        header {
+            background: #0a0f2d;
+            padding: 1rem 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header-left {
+            display: flex;
+            align-items: center;
+        }
+
+        .hamburger {
+            display: flex;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 5px;
+            margin-right: 1rem;
+        }
+
+        .hamburger span {
+            width: 25px;
+            height: 3px;
+            background: white;
+        }
+
+        .logo {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 1.5rem;
+            font-size: 1rem;
+        }
+
+        .main-content {
+            padding: 5rem 0;
+            text-align: center;
+        }
+
+        .main-content h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .main-content p {
+            font-size: 1.2rem;
+        }
+
+        footer {
+            background: linear-gradient(to bottom, #2a5a6a, #3a7a8a);
+            padding: 2rem 0;
+        }
+
+        .footer-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .footer-logo {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-right: 4rem;
+        }
+
+        .footer-columns {
+            display: flex;
+            gap: 4rem;
+        }
+
+        .footer-column h3 {
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-column a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            font-size: 0.9rem;
+            margin-bottom: 0.3rem;
+        }
+
+        #search{
+            padding: 5px;
+            padding-left: 30px;
+            text-align: left;
+            font-size: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-inner">
+            <div class="header-left">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="logo">KAMEHAMEPASS</div>
+            </div>
+            <nav>
+                <a href="home.html">Home</a>
+                <a href="syllabus.html">Syllabus</a>
+                <a href="#">Question Paper</a>
+                <a href="#">Notes</a>
+                <a href="upload.html">Upload</a>
+                <a href="login.html">Login</a>
+                <a href=""></a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="main-content">
+        <div class="container">
+            <h1>Syllabus</h1>
+            <input  id="search" type="text" placeholder="Search">
+            <button>search</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-inner">
+            <div class="footer-logo">KAMEHAMEPASS</div>
+            <div class="footer-columns">

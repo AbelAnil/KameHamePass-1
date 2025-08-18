@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KAMEHAMEPASS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: sans-serif;
+            color: white;
+            background: linear-gradient(to bottom, #0a0f2d, #1a3a4a, #2a5a6a, #3a7a8a);
+            line-height: 1.5;
+        }
+
+        header {
+            background: #0a0f2d;
+            padding: 1rem 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header-left {
+            display: flex;
+            align-items: center;
+        }
+
+        .hamburger {
+            display: flex;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 5px;
+            margin-right: 1rem;
+        }
+
+        .hamburger span {
+            width: 25px;
+            height: 3px;
+            background: white;
+        }
+
+        .logo {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 1.5rem;
+            font-size: 1rem;
+        }
+
+        .hero {
+            padding: 5rem 0 3rem;
+        }
+
+        .hero-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .hero-text {
+            max-width: 50%;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            line-height: 1.1;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero input {
+            width: 80%;
+            padding: 0.8rem 1rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .hero svg {
+            max-width: 40%;
+            height: auto;
+        }
+
+        .feature {
+            padding: 3rem 0;
+        }
+
+        .feature-inner {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .feature svg {
+            max-width: 30%;
+            height: auto;
+        }
+
+        .feature-text {
+            max-width: 40%;
+        }
+
+        .feature p {
+            font-size: 1rem;
+        }
+
+        .feature h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        footer {
+            background: linear-gradient(to bottom, #2a5a6a, #3a7a8a);
+            padding: 2rem 0;
+        }
+
+        .footer-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .footer-logo {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-right: 4rem;
+        }
+
+        .footer-columns {
+            display: flex;
+            gap: 4rem;
+        }
+
+        .footer-column h3 {
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-column a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            font-size: 0.9rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .user-profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255,255,255,0.1);
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: white;
+}
+
+.user-profile img {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 2px solid white;
+  transition: transform 0.3s ease;
+}
+
+.user-profile img:hover {
+  transform: scale(1.05);
+}
+    </style>
+</head>
+<body>
+<header>
+    <div class="container header-inner">
+        <div class="header-left">
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="logo">KAMEHAMEPASS</div>
+        </div>
+        <nav>
+            <a href="syllabus.html">Syllabus</a>
+            <a href="questionpaper.html">Question Paper</a>
+            <a href="#">Notes</a>
+            <a href="#">Upload</a>
+            
+        </nav>
+    </div>
+</header>
+
+    <section class="hero">
+        <div class="container hero-inner">
+            <div class="hero-text">
+                <h1>Discover And Collect Notes</h1>
+                <p>The most insane place to find notes ;)</p>
+                <input type="text" placeholder="Search">
+            </div>
+            <svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                <!-- Monitor body -->
+                <rect x="50" y="30" width="300" height="200" rx="10" fill="#a29bfe" transform="rotate(-10 200 130)"/>
+                <!-- Screen -->
+                <rect x="60" y="40" width="280" height="180" rx="5" fill="#edf2f7" transform="rotate(-10 200 130)"/>
+                <!-- Mountain line chart -->
+                <path d="M80 200 L140 100 L200 160 L260 80 L320 140" stroke="#4299e1" stroke-width="4" fill="none" transform="rotate(-10 200 130)"/>
+                <!-- Stand -->
+                <rect x="170" y="230" width="60" height="20" fill="#a0aec1" transform="rotate(-10 200 130)"/>
+                <!-- Icon on top right of monitor -->
+                <circle cx="320" cy="50" r="20" fill="#81e6d9" transform="rotate(-10 200 130)"/>
+            </svg>
+        </div>
+    </section>
+
+    <section class="feature">
+        <div class="container feature-inner">
+            <svg width="300" height="200" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+                <!-- Stacked boxes -->
+                <rect x="100" y="140" width="180" height="40" rx="5" fill="#f6e05a"/>
+                <rect x="90" y="80" width="200" height="40" rx="5" fill="#63b3ed"/>
+                <rect x="80" y="20" width="220" height="40" rx="5" fill="#f687b3"/>
+                <!-- Pink orb -->
+                <circle cx="40" cy="100" r="30" fill="#ed64a6"/>
+            </svg>
+            <div class="feature-text">
+                <p>Use our built-in collaboration dashboard to pull valuable insights and monitor the value of your study portions over time.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="feature">
+        <div class="container feature-inner">
+            <svg width="300" height="200" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+                <!-- Stacked boxes -->
+                <rect x="100" y="140" width="180" height="40" rx="5" fill="#f6e05a"/>
+                <rect x="90" y="80" width="200" height="40" rx="5" fill="#63b3ed"/>
+                <rect x="80" y="20" width="220" height="40" rx="5" fill="#f687b3"/>
+                <!-- Lightning orb -->
+                <circle cx="40" cy="100" r="30" fill="#ed64a6"/>
+                <!-- Lightning bolt -->
+                <path d="M30 80 L40 100 L30 100 L40 120 L30 120 L40 140" stroke="#faf089" stroke-width="8" fill="none"/>
+            </svg>
+            <div class="feature-text">
+                <h2>Built-In Collaborative Solving</h2>
+                <p>Use our built-in collaboration dashboard to pull valuable insights and monitor the value of your study portions over time.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-inner">
+            <div class="footer-logo">KAMEHAMEPASS</div>
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <h3>Home</h3>
+                    <a href="#">About</a>
+                    <a href="#">Buy Notes</a>
+                </div>
+                <div class="footer-column">
+                    <h3>Market</h3>
+                    <a href="#">Buy Notes</a>
+                    <a href="#">Sell Notes</a>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <a href="#">Email</a>
+                    <a href="#">Linkedin</a>
+                    <a href="#">Instagram</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

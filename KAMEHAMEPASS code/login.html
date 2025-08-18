@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KAMEHAMEPASS Login</title>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(to bottom, #003b73, #4a89dc);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box {
+    background: linear-gradient(to bottom, #0d4b7f, #5c92d6);
+    padding: 40px 30px;
+    border-radius: 20px;
+    width: 320px;
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+h2 {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    text-align: left;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+input::placeholder {
+    color: #bbb;
+}
+
+.forgot {
+    text-align: left;
+    font-size: 12px;
+    margin-bottom: 20px;
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #003b73;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #002a50;
+}
+
+.or {
+    margin: 20px 0;
+    font-size: 12px;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border-radius: 6px;
+    padding: 8px 15px;
+    cursor: pointer;
+    flex: 1;
+}
+
+.social-btn img {
+    width: 20px;
+    height: 20px;
+}
+
+.register {
+    margin-top: 15px;
+    font-size: 12px;
+}
+
+.register a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+</style>
+</head>
+<body>
+    <div class="login-box">
+        <h1>KAMEHAMEPASS</h1>
+        <h2>LOGIN</h2>
+
+        <label>Email</label>
+        <input type="email" placeholder="username@gmail.com" required>
+
+        <label>Password</label>
+        <input type="password" placeholder="Password" required>
+
+        <a href="#" class="forgot">Forgot Password?</a>
+
+        <a href="home.html">
+            <button class="btn">Sign in</button>
+        </a>
+
+        <p class="or">or continue with</p>
+
+        <div class="social-buttons">
+            <div class="social-btn">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png" alt="Google">
+            </div>
+            <div class="social-btn">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png" alt="Facebook">
+            </div>
+        </div>
+
+        <p class="register">
+            Don't have an account yet? 
+            <a href="#">Register for free</a>
+        </p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KAMEHAMEPASS - Upload Notes</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: white;
+      background: linear-gradient(to bottom, #0a0f2d, #1a3a4a, #2a5a6a, #3a7a8a);
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Header */
+    header {
+      background: #0a0f2d;
+      padding: 1rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    .header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+    }
+
+    .header-left {
+      display: flex;
+      align-items: center;
+    }
+
+    .hamburger {
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+      gap: 5px;
+      margin-right: 1rem;
+    }
+
+    .hamburger span {
+      width: 25px;
+      height: 3px;
+      background: white;
+    }
+
+    .logo {
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    nav {
+      flex: 1;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-size: 1rem;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .user-profile {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: rgba(255,255,255,0.1);
+      padding: 6px 12px;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: white;
+    }
+
+    .user-profile img {
+      width: 38px;
+      height: 38px;
+      transition: transform 0.3s ease;
+    }
+
+    .user-profile img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Upload Container */
+    .upload-container {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+    }
+
+    .upload-box {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 2.5rem;
+      border-radius: 12px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+      width: 100%;
+      max-width: 500px;
+      text-align: center;
+    }
+
+    .upload-box h1 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .upload-box label {
+      display: block;
+      text-align: left;
+      margin: 1rem 0 0.5rem;
+      font-size: 1rem;
+      font-weight: 500;
+    }
+
+    .upload-box input[type="text"],
+    .upload-box input[type="file"] {
+      width: 100%;
+      padding: 0.8rem 1rem;
+      border-radius: 6px;
+      border: none;
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    /* Upload button */
+    .upload-btn {
+      display: inline-block;
+      background: #0077cc;
+      color: #fff;
+      padding: 12px 24px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+      opacity: 0.8;
+      transition: transform 0.2s ease;
+    }
+
+    .upload-btn:hover {
+      transform: scale(1.05);
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .upload-box {
+        padding: 2rem 1.5rem;
+      }
+      .upload-box h1 {
+        font-size: 1.6rem;
+      }
+    }
+
+    
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container header-inner">
+      <div class="header-left">
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="logo">KAMEHAMEPASS</div>
+      </div>
+      <nav>
+        <a href="home.html">Home</a>
+        <a href="syllabus.html">Syllabus</a>
+        <a href="questionpaper.html">Question Paper</a>
+        <a href="notes.html">Notes</a>
+        <a href="upload.html">Upload</a>
+      </nav>
+      <div class="user-profile">
+        <img src="images/Profile.png" alt="User" />
+      </div>
+    </div>
+  </header>
+
+  <!-- Upload Section -->
+  <div class="upload-container">
+    <div class="upload-box">
+      <h1>Upload Your Notes</h1>
+      <form>
+        <label for="title">Note Title</label>
+        <input type="text" id="title" name="title" placeholder="Enter note title">
+
+        <label for="subject">Department</label>
+        <input type="text" id="subject" name="subject" placeholder="Enter Department">
+
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject" placeholder="Enter subject">
+
+        <label for="subject">Subject Code</label>
+        <input type="text" id="subject" name="subject" placeholder="Enter Subject Code">
+
+        <label for="file">Upload PDF</label>
+        <input type="file" id="file" name="file">
+
+        <a href="#" class="upload-btn">Upload</a>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
